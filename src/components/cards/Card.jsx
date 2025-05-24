@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { cards } from "../constans/card";
-import { Link } from "react-router-dom";
+
 import { HeartIcon as HeartOutline } from "@heroicons/react/24/outline";
 import { HeartIcon as HeartSolid } from "@heroicons/react/24/solid";
 const Card = () => {
@@ -31,10 +31,14 @@ const Card = () => {
           </button>
 
           {/* Card Content */}
-          <Link to={`/preview/${card._id}`}>
+          <a
+            href={`/preview/${card._id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="w-full h-40 overflow-hidden rounded">
               <img
-                src={card.image}
+                src={card.mainImage}
                 alt={card.title}
                 className="w-full h-full object-cover"
               />
@@ -47,7 +51,7 @@ const Card = () => {
                 ? card.title + ".".repeat(30 - card.title.length)
                 : card.title.slice(0, 27) + "..."}
             </p>
-          </Link>
+          </a>
         </div>
       ))}
     </div>
