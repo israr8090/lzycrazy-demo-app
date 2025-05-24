@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { cards } from "";
+import { cards } from "../constans/card";
 
 const Preview = () => {
   const { id } = useParams();
   const card = cards.find((card) => card._id === parseInt(id));
 
-
-  const [mainImage, setMainImage] = useState(card.image); 
+  const [mainImage, setMainImage] = useState(card.image);
   if (!card)
     return <div className="text-center text-red-500">Item not found</div>;
 

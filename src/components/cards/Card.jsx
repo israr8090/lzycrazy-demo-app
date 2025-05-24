@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { cards } from "../";
+import { cards } from "../constans/card";
 import { Link } from "react-router-dom";
 import { HeartIcon as HeartOutline } from "@heroicons/react/24/outline";
 import { HeartIcon as HeartSolid } from "@heroicons/react/24/solid";
