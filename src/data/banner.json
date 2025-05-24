@@ -1,0 +1,24 @@
+{
+  "bannerOne": {
+    "header": "RESTAURANT AND CAFE",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
+    "buttonText": "Read More",
+    "backgroundColor": "#d50000",
+    "image": "https://cdn.pixabay.com/photo/2017/04/27/08/18/champagne-2264811_640.jpg"
+  },
+  "bannerTwo": {
+    "primaryColor": "#d50000",
+    "header": "RESTAURANT AND CAFE",
+    "offer": "30%",
+    "description": "Exclusive offer only for Sunday",
+    "image": "https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg",
+    "backgroundImage": "https://images.pexels.com/photos/350417/pexels-photo-350417.jpeg"
+  },
+  "bannerThree": {
+    "backgroundColor": "#d50000",
+    "heading": "Restaurant menu",
+    "description1": "Lorem Ipsum is simply dummy text the printing and type setting the printing and type setting Lorem Ipsum is simply dummy text of",
+    "description2": "Lorem Ipsum is simply dummy text the printing and type setting the printing and type setting Lorem Ipsum is simply dummy text of",
+    "image": "https://cdn.pixabay.com/photo/2017/04/27/08/18/champagne-2264811_640.jpg"
+  }
+}
