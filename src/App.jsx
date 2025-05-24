@@ -14,13 +14,17 @@ import Preview from "./components/cards/Preview";
 function App() {
   const location = useLocation();
 
-  // Check if current path starts with "/preview"
   const isPreviewPage = location.pathname.startsWith("/preview");
   return (
     <div>
       <Navbar />
-      <BannerOne data={bannerData.bannerOne} />
-      <BannerTwo data={bannerData.bannerTwo} />
+      {!isPreviewPage && (
+        <>
+          <BannerOne data={bannerData.bannerOne} />
+          <BannerTwo data={bannerData.bannerTwo} />
+        </>
+      )}
+
       <Routes>
         <Route path="/" element={<Card />} />
         <Route path="/preview/:id" element={<Preview />} />
@@ -29,11 +33,9 @@ function App() {
         {!isPreviewPage && (
           <>
             <Testimonial />
+            <BannerThree data={bannerData.bannerThree} />
           </>
         )}
-
-        <BannerThree data={bannerData.bannerThree} />
-        <Testimonial />
 
         <Footer />
         <Footer2 />

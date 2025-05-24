@@ -32,7 +32,7 @@ const Preview = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row gap-8 container m-auto mt-5 p-3">
+    <div className="container flex flex-col lg:flex-row gap-8  m-auto mt-5 p-3">
       {/* Left Section: Main Content */}
       <div className="lg:w-2/3">
         {/* Main Image Section */}
