@@ -1,4 +1,3 @@
-import React from "react";
 import BannerOne from "./components/BannerOne";
 import BannerTwo from "./components/BannerTwo";
 import bannerData from "./data/banner.json";
@@ -20,23 +19,22 @@ function App() {
   return (
     <div>
       <Navbar />
-      <BannerOne data={bannerData.bannerOne}/>
+      <BannerOne data={bannerData.bannerOne} />
       <BannerTwo data={bannerData.bannerTwo} />
       <Routes>
         <Route path="/" element={<Card />} />
         <Route path="/preview/:id" element={<Preview />} />
       </Routes>
       <div className="flex flex-col justify-end min-h-screen">
-<<<<<<< HEAD
         {!isPreviewPage && (
           <>
             <Testimonial />
           </>
         )}
-=======
+
         <BannerThree data={bannerData.bannerThree} />
         <Testimonial />
->>>>>>> 79a53ce69773951dd2c6e01844cd1cd3f7157441
+
         <Footer />
         <Footer2 />
       </div>
