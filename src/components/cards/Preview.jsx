@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { cards } from "";
+import { cards } from "../constans/card";
 
 const Preview = () => {
   const { id } = useParams();
